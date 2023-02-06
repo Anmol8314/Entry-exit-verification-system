@@ -48,9 +48,9 @@ def deleteData(username,userOTP):
 
 
 def main():
-	"""Simple Login App"""
+	"""WatchMan's App"""
 
-	st.title("Simple Login App")
+	st.title("WatchMan's App")
 
 	menu = ["Home","Login"]
 	choice = st.sidebar.selectbox("Menu",menu)

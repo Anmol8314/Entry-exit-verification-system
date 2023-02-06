@@ -39,11 +39,6 @@ def login_user(username,password):
 	return data
 
 
-def view_all_users():
-	c.execute('SELECT * FROM userstable')
-	data = c.fetchall()
-	return data
-
 
 def isapplied(username):
     gate.execute('SELECT datetime,expectedDateTime FROM marketPassTable WHERE username =?',(username,))
@@ -68,7 +63,7 @@ def applyHomePass(username,otp,dateTime,returnTime):
 def main():
 	"""Simple Login App"""
 
-	st.title("Simple Login App")
+	st.title("Gate Pass Management App")
 
 	menu = ["Home","Login"]
 	choice = st.sidebar.selectbox("Menu",menu)
